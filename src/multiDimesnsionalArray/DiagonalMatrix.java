@@ -1,6 +1,6 @@
 package multiDimesnsionalArray;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class DiagonalMatrix {
@@ -14,6 +14,7 @@ public class DiagonalMatrix {
             System.out.println("Enter n between 1 and 100 ");
             n = sc.nextInt();
         }
+        sc.close();
         int[][] twoDimArray = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {

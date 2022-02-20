@@ -1,8 +1,7 @@
 package amazingNumbers;
 import java.util.Scanner;
-import java.util.*;
 
-public class SecondSteps {
+public class SecondStep {
     public static void main(String[] args) {
 
         // We will take user digit as string , we warn it to enter integer and natural number

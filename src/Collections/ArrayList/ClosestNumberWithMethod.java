@@ -1,4 +1,4 @@
-package arrayList;
+package Collections.ArrayList;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -7,10 +7,10 @@ public class ClosestNumberWithMethod {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> newNumbers = getUserInput();
 
-        int num = sc.nextInt();
+        int num = scanner.nextInt();
         int dif = diferenceFromClosest(newNumbers, num);
         ArrayList<Integer> nearNumbers = findClosestNumbers(newNumbers, num, dif);
 
@@ -56,7 +56,23 @@ public class ClosestNumberWithMethod {
         for (String str : numbers) {
             list.add(Integer.parseInt(str));
         }
+        scanner.close();
         return (ArrayList) list;
     }
+    /*private static ArrayList getUserInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        String numbers = scanner.nextLine();
+
+        String str[] = numbers.split(" ");
+        List<String> list = Arrays.asList(str);
+
+        List<Integer> newNumbers = list.stream()
+                .map(s -> Integer.parseInt(s))
+                .collect(Collectors.toList());
+
+        return (ArrayList) newNumbers;
+    }*/
+
 }
 
